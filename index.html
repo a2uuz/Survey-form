@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="container">
+  <header class="header" >
+  	<strong><link rel="stylesheet" type="text/css" href="styles.css"></strong>
+    <h1 id="title" class="text-center" class="hc">Shinobi Survey Form</h1>
+    <style type="text/css">
+ label, p, footer {
+   -webkit-text-stroke: 0.9px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+h3, h1 {
+   -webkit-text-stroke: 0.9px black;
+   color: orange;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+
+}
+</style>
+    <p id="description" class="description text-center">
+      Welcome and Enjoy your time ツ
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <h3>What is your ninja rank?</h3>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Acedemy Student</option>
+        <option value="genin">Genin</option>
+        <option value="chunin">Chunin</option>
+       <option value="anbu">Anbu</option>
+       <option value="jonin">Jonin</option>     
+       <option value="kage">Kage</option>
+        <option value="preferNo">Prefer not to say</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <h3>Would you recommend watching Naruto?</h3>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+   	
+    <div class="form-group">
+      <h3>
+        Which Shinobi Nation are you from?
+      </h3>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="leaf">Leaf Village</option>
+        <option value="sand">Sand Village</option>
+        <option value="mist">Mist Village</option>
+        <option value="stone">Stone Village</option>
+        <option value="stone">Cloud Village</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <h3>
+       What kind of Power/Jutsu would you like to have?
+        <span class="clue">(Check your top 3)</span>
+      </h3>
+
+      <label
+        ><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />SHADOW CLONE JUTSU</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />RASENGAN</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />SUMMONING JUTSU</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />BYAKUGAN</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />A TAILED BEAST</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="gitter-help-rooms"
+          type="checkbox"
+          class="input-checkbox"
+        />SHARINGAN</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />100 HEALING JUTSU</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="city-meetups"
+          type="checkbox"
+          class="input-checkbox"
+        />SIXTH PATHS SAGE MODE</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="wiki"
+          type="checkbox"
+          class="input-checkbox"
+        />GENJUTSU</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />FEMALE JUTSU</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />THE EIGHT GATES</label
+      >
+    </div>
+
+    <div class="form-group">
+      <h3>Others:</h3>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Write it down here ..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<footer>&copy; 2020 by Abdiaziz MA Nageeye</footer>
+</body>
+</html>
