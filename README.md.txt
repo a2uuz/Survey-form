@@ -6,4 +6,4 @@ This makes up one part of a my portfolio projects.
 
 See the working version here:
 
-https://github.com/a2uuz/Survey-form.git
+https://a2uuz.github.io/Survey-form/
